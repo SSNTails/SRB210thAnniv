@@ -1,0 +1,473 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: zlib - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPF1.bat" with contents
+[
+@echo off
+ml.exe /nologo /c /coff /Cx /Fo".\Win32_LIB_ASM_Release\inffas32.obj" "..\..\contrib\masmx86\inffas32.asm"
+]
+Creating command line "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPF1.bat"
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPF2.bat" with contents
+[
+@echo off
+ml.exe /nologo /c /coff /Cx /Fo".\Win32_LIB_ASM_Release\gvmat32.obj" "..\..\contrib\masmx86\gvmat32.asm"
+]
+Creating command line "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPF2.bat"
+Creating command line "rc.exe /l 0x409 /fo"Win32_LIB_ASM_Release/zlib1.res" /i "\srb2demo2\10anniv\SRB2SrcSVN\tools\zlib\win32" /d "NDEBUG" "C:\srb2demo2\10anniv\SRB2SrcSVN\tools\zlib\win32\zlib1.rc"" 
+Assembling...
+ Assembling: ..\..\contrib\masmx86\inffas32.asm
+Assembling...
+ Assembling: ..\..\contrib\masmx86\gvmat32.asm
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPF3.tmp" with contents
+[
+/nologo /ML /W3 /O2 /D "WIN32" /D "NDEBUG" /D "ASMV" /D "ASMINF" /Fo"Win32_LIB_ASM_Release/" /Fd"Win32_LIB_ASM_Release/" /FD /c 
+"C:\srb2demo2\10anniv\SRB2SrcSVN\tools\zlib\adler32.c"
+"C:\srb2demo2\10anniv\SRB2SrcSVN\tools\zlib\compress.c"
+"C:\srb2demo2\10anniv\SRB2SrcSVN\tools\zlib\crc32.c"
+"C:\srb2demo2\10anniv\SRB2SrcSVN\tools\zlib\deflate.c"
+"C:\srb2demo2\10anniv\SRB2SrcSVN\tools\zlib\gzio.c"
+"C:\srb2demo2\10anniv\SRB2SrcSVN\tools\zlib\infback.c"
+"C:\srb2demo2\10anniv\SRB2SrcSVN\tools\zlib\inffast.c"
+"C:\srb2demo2\10anniv\SRB2SrcSVN\tools\zlib\inflate.c"
+"C:\srb2demo2\10anniv\SRB2SrcSVN\tools\zlib\inftrees.c"
+"C:\srb2demo2\10anniv\SRB2SrcSVN\tools\zlib\trees.c"
+"C:\srb2demo2\10anniv\SRB2SrcSVN\tools\zlib\uncompr.c"
+"C:\srb2demo2\10anniv\SRB2SrcSVN\tools\zlib\zutil.c"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPF3.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPF4.tmp" with contents
+[
+/nologo /ML /W3 /O2 /I "..\.." /D "WIN32" /D "NDEBUG" /D "ASMV" /D "ASMINF" /Fo"Win32_LIB_ASM_Release/" /Fd"Win32_LIB_ASM_Release/" /FD /c 
+"C:\srb2demo2\10anniv\SRB2SrcSVN\tools\zlib\contrib\masmx86\gvmat32c.c"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPF4.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPF5.tmp" with contents
+[
+/nologo /out:"Win32_LIB_ASM_Release\zlib.lib" 
+.\Win32_LIB_ASM_Release\adler32.obj
+.\Win32_LIB_ASM_Release\compress.obj
+.\Win32_LIB_ASM_Release\crc32.obj
+.\Win32_LIB_ASM_Release\deflate.obj
+.\Win32_LIB_ASM_Release\gzio.obj
+.\Win32_LIB_ASM_Release\infback.obj
+.\Win32_LIB_ASM_Release\inffast.obj
+.\Win32_LIB_ASM_Release\inflate.obj
+.\Win32_LIB_ASM_Release\inftrees.obj
+.\Win32_LIB_ASM_Release\trees.obj
+.\Win32_LIB_ASM_Release\uncompr.obj
+.\Win32_LIB_ASM_Release\zutil.obj
+.\Win32_LIB_ASM_Release\gvmat32c.obj
+.\Win32_LIB_ASM_Release\zlib1.res
+.\Win32_LIB_ASM_Release\gvmat32.obj
+.\Win32_LIB_ASM_Release\inffas32.obj
+]
+Creating command line "link.exe -lib @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPF5.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+adler32.c
+compress.c
+crc32.c
+deflate.c
+gzio.c
+infback.c
+inffast.c
+inflate.c
+inftrees.c
+trees.c
+uncompr.c
+zutil.c
+Generating Code...
+Compiling...
+gvmat32c.c
+Creating library...
+<h3>
+--------------------Configuration: libpng - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPF6.tmp" with contents
+[
+/nologo /ML /W3 /O2 /I "..\.." /I "..\..\..\zlib" /D "WIN32" /D "NDEBUG" /D "PNG_USE_PNGVCRD" /D "PNG_LIBPNG_SPECIALBUILD" /Fo"Win32_LIB_ASM_Release/" /Fd"Win32_LIB_ASM_Release/" /FD /c 
+"C:\srb2demo2\10anniv\SRB2SrcSVN\tools\libpng-src\png.c"
+"C:\srb2demo2\10anniv\SRB2SrcSVN\tools\libpng-src\pngerror.c"
+"C:\srb2demo2\10anniv\SRB2SrcSVN\tools\libpng-src\pngget.c"
+"C:\srb2demo2\10anniv\SRB2SrcSVN\tools\libpng-src\pngmem.c"
+"C:\srb2demo2\10anniv\SRB2SrcSVN\tools\libpng-src\pngpread.c"
+"C:\srb2demo2\10anniv\SRB2SrcSVN\tools\libpng-src\pngread.c"
+"C:\srb2demo2\10anniv\SRB2SrcSVN\tools\libpng-src\pngrio.c"
+"C:\srb2demo2\10anniv\SRB2SrcSVN\tools\libpng-src\pngrtran.c"
+"C:\srb2demo2\10anniv\SRB2SrcSVN\tools\libpng-src\pngrutil.c"
+"C:\srb2demo2\10anniv\SRB2SrcSVN\tools\libpng-src\pngset.c"
+"C:\srb2demo2\10anniv\SRB2SrcSVN\tools\libpng-src\pngtrans.c"
+"C:\srb2demo2\10anniv\SRB2SrcSVN\tools\libpng-src\pngvcrd.c"
+"C:\srb2demo2\10anniv\SRB2SrcSVN\tools\libpng-src\pngwio.c"
+"C:\srb2demo2\10anniv\SRB2SrcSVN\tools\libpng-src\pngwrite.c"
+"C:\srb2demo2\10anniv\SRB2SrcSVN\tools\libpng-src\pngwtran.c"
+"C:\srb2demo2\10anniv\SRB2SrcSVN\tools\libpng-src\pngwutil.c"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPF6.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPF7.tmp" with contents
+[
+/nologo /out:"Win32_LIB_ASM_Release\libpng.lib" 
+".\Win32_LIB_ASM_Release\png.obj"
+".\Win32_LIB_ASM_Release\pngerror.obj"
+".\Win32_LIB_ASM_Release\pngget.obj"
+".\Win32_LIB_ASM_Release\pngmem.obj"
+".\Win32_LIB_ASM_Release\pngpread.obj"
+".\Win32_LIB_ASM_Release\pngread.obj"
+".\Win32_LIB_ASM_Release\pngrio.obj"
+".\Win32_LIB_ASM_Release\pngrtran.obj"
+".\Win32_LIB_ASM_Release\pngrutil.obj"
+".\Win32_LIB_ASM_Release\pngset.obj"
+".\Win32_LIB_ASM_Release\pngtrans.obj"
+".\Win32_LIB_ASM_Release\pngvcrd.obj"
+".\Win32_LIB_ASM_Release\pngwio.obj"
+".\Win32_LIB_ASM_Release\pngwrite.obj"
+".\Win32_LIB_ASM_Release\pngwtran.obj"
+".\Win32_LIB_ASM_Release\pngwutil.obj"
+"\srb2demo2\10anniv\SRB2SrcSVN\tools\zlib\projects\visualc6\Win32_LIB_ASM_Release\zlib.lib"
+]
+Creating command line "link.exe -lib @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPF7.tmp"
+<h3>Output Window</h3>
+Compiling...
+png.c
+pngerror.c
+pngget.c
+pngmem.c
+pngpread.c
+pngread.c
+pngrio.c
+pngrtran.c
+pngrutil.c
+pngset.c
+pngtrans.c
+pngvcrd.c
+pngwio.c
+pngwrite.c
+pngwtran.c
+pngwutil.c
+Generating Code...
+Creating library...
+<h3>
+--------------------Configuration: Srb2win - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPF8.bat" with contents
+[
+@echo off
+nasmw -o .\..\..\objs\VC\Release\Win32/tmap_vc.obj -f win32 ..\tmap_vc.nas
+]
+Creating command line "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPF8.bat"
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPF9.bat" with contents
+[
+@echo off
+nasmw -o .\..\..\objs\VC\Release\Win32/tmap_mmx.obj -f win32 ..\tmap_mmx.nas
+]
+Creating command line "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPF9.bat"
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPFA.bat" with contents
+[
+@echo off
+nasmw -o .\..\..\objs\VC\Release\Win32/tmap.obj -f win32 ..\tmap.nas
+]
+Creating command line "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPFA.bat"
+Creating command line "rc.exe /l 0x409 /fo"..\..\objs\VC\Release\Win32/Srb2win.res" /i "win32" /d "NDEBUG" "C:\srb2demo2\10anniv\SRB2SrcSVN\src\win32\Srb2win.rc"" 
+Compiling tmap_vc.nas with NASM...
+Compiling tmap_mmx.nas with NASM...
+Compiling tmap.nas with NASM...
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPFB.tmp" with contents
+[
+/nologo /G5 /ML /W3 /GX /Zi /Ot /Og /Oi /Op /Oy /Ob1 /Gy /I "..\..\tools\libpng-src" /I "..\..\tools\zlib" /D "NDEBUG" /D "_WINDOWS" /D "USEASM" /D "HAVE_PNG" /FR"..\..\objs\VC\Release\Win32/" /Fo"..\..\objs\VC\Release\Win32/" /Fd"..\..\objs\VC\Release\Win32/" /FD /GF /Gs /GF /c 
+"C:\srb2demo2\10anniv\SRB2SrcSVN\src\win32\dx_error.c"
+"C:\srb2demo2\10anniv\SRB2SrcSVN\src\win32\fabdxlib.c"
+"C:\srb2demo2\10anniv\SRB2SrcSVN\src\filesrch.c"
+"C:\srb2demo2\10anniv\SRB2SrcSVN\src\win32\Mid2strm.c"
+"C:\srb2demo2\10anniv\SRB2SrcSVN\src\win32\win_cd.c"
+"C:\srb2demo2\10anniv\SRB2SrcSVN\src\win32\win_dbg.c"
+"C:\srb2demo2\10anniv\SRB2SrcSVN\src\win32\win_dll.c"
+"C:\srb2demo2\10anniv\SRB2SrcSVN\src\win32\win_main.c"
+"C:\srb2demo2\10anniv\SRB2SrcSVN\src\win32\win_net.c"
+"C:\srb2demo2\10anniv\SRB2SrcSVN\src\win32\win_snd.c"
+"C:\srb2demo2\10anniv\SRB2SrcSVN\src\win32\win_sys.c"
+"C:\srb2demo2\10anniv\SRB2SrcSVN\src\win32\win_vid.c"
+"C:\srb2demo2\10anniv\SRB2SrcSVN\src\comptime.c"
+"C:\srb2demo2\10anniv\SRB2SrcSVN\src\D_clisrv.c"
+"C:\srb2demo2\10anniv\SRB2SrcSVN\src\D_main.c"
+"C:\srb2demo2\10anniv\SRB2SrcSVN\src\D_net.c"
+"C:\srb2demo2\10anniv\SRB2SrcSVN\src\D_netcmd.c"
+"C:\srb2demo2\10anniv\SRB2SrcSVN\src\D_netfil.c"
+"C:\srb2demo2\10anniv\SRB2SrcSVN\src\Dehacked.c"
+"C:\srb2demo2\10anniv\SRB2SrcSVN\src\Dstrings.c"
+"C:\srb2demo2\10anniv\SRB2SrcSVN\src\Z_zone.c"
+"C:\srb2demo2\10anniv\SRB2SrcSVN\src\F_finale.c"
+"C:\srb2demo2\10anniv\SRB2SrcSVN\src\F_wipe.c"
+"C:\srb2demo2\10anniv\SRB2SrcSVN\src\G_game.c"
+"C:\srb2demo2\10anniv\SRB2SrcSVN\src\G_input.c"
+"C:\srb2demo2\10anniv\SRB2SrcSVN\src\Am_map.c"
+"C:\srb2demo2\10anniv\SRB2SrcSVN\src\Command.c"
+"C:\srb2demo2\10anniv\SRB2SrcSVN\src\Console.c"
+"C:\srb2demo2\10anniv\SRB2SrcSVN\src\Hu_stuff.c"
+"C:\srb2demo2\10anniv\SRB2SrcSVN\src\St_stuff.c"
+"C:\srb2demo2\10anniv\SRB2SrcSVN\src\y_inter.c"
+"C:\srb2demo2\10anniv\SRB2SrcSVN\src\hardware\hw3sound.c"
+"C:\srb2demo2\10anniv\SRB2SrcSVN\src\hardware\hw_bsp.c"
+"C:\srb2demo2\10anniv\SRB2SrcSVN\src\hardware\hw_cache.c"
+"C:\srb2demo2\10anniv\SRB2SrcSVN\src\hardware\hw_draw.c"
+"C:\srb2demo2\10anniv\SRB2SrcSVN\src\hardware\hw_light.c"
+"C:\srb2demo2\10anniv\SRB2SrcSVN\src\hardware\hw_main.c"
+"C:\srb2demo2\10anniv\SRB2SrcSVN\src\hardware\hw_md2.c"
+"C:\srb2demo2\10anniv\SRB2SrcSVN\src\hardware\hw_trick.c"
+"C:\srb2demo2\10anniv\SRB2SrcSVN\src\i_tcp.c"
+"C:\srb2demo2\10anniv\SRB2SrcSVN\src\mserv.c"
+"C:\srb2demo2\10anniv\SRB2SrcSVN\src\M_argv.c"
+"C:\srb2demo2\10anniv\SRB2SrcSVN\src\M_bbox.c"
+"C:\srb2demo2\10anniv\SRB2SrcSVN\src\M_cheat.c"
+"C:\srb2demo2\10anniv\SRB2SrcSVN\src\M_fixed.c"
+"C:\srb2demo2\10anniv\SRB2SrcSVN\src\M_menu.c"
+"C:\srb2demo2\10anniv\SRB2SrcSVN\src\M_misc.c"
+"C:\srb2demo2\10anniv\SRB2SrcSVN\src\m_queue.c"
+"C:\srb2demo2\10anniv\SRB2SrcSVN\src\M_random.c"
+"C:\srb2demo2\10anniv\SRB2SrcSVN\src\string.c"
+"C:\srb2demo2\10anniv\SRB2SrcSVN\src\Info.c"
+"C:\srb2demo2\10anniv\SRB2SrcSVN\src\P_ceilng.c"
+"C:\srb2demo2\10anniv\SRB2SrcSVN\src\P_enemy.c"
+"C:\srb2demo2\10anniv\SRB2SrcSVN\src\P_fab.c"
+"C:\srb2demo2\10anniv\SRB2SrcSVN\src\P_floor.c"
+"C:\srb2demo2\10anniv\SRB2SrcSVN\src\P_inter.c"
+"C:\srb2demo2\10anniv\SRB2SrcSVN\src\P_lights.c"
+"C:\srb2demo2\10anniv\SRB2SrcSVN\src\P_map.c"
+"C:\srb2demo2\10anniv\SRB2SrcSVN\src\P_maputl.c"
+"C:\srb2demo2\10anniv\SRB2SrcSVN\src\P_mobj.c"
+"C:\srb2demo2\10anniv\SRB2SrcSVN\src\p_polyobj.c"
+"C:\srb2demo2\10anniv\SRB2SrcSVN\src\P_saveg.c"
+"C:\srb2demo2\10anniv\SRB2SrcSVN\src\P_setup.c"
+"C:\srb2demo2\10anniv\SRB2SrcSVN\src\P_sight.c"
+"C:\srb2demo2\10anniv\SRB2SrcSVN\src\P_spec.c"
+"C:\srb2demo2\10anniv\SRB2SrcSVN\src\P_telept.c"
+"C:\srb2demo2\10anniv\SRB2SrcSVN\src\P_tick.c"
+"C:\srb2demo2\10anniv\SRB2SrcSVN\src\P_user.c"
+"C:\srb2demo2\10anniv\SRB2SrcSVN\src\Tables.c"
+"C:\srb2demo2\10anniv\SRB2SrcSVN\src\R_bsp.c"
+"C:\srb2demo2\10anniv\SRB2SrcSVN\src\R_data.c"
+"C:\srb2demo2\10anniv\SRB2SrcSVN\src\R_draw.c"
+"C:\srb2demo2\10anniv\SRB2SrcSVN\src\R_main.c"
+"C:\srb2demo2\10anniv\SRB2SrcSVN\src\R_plane.c"
+"C:\srb2demo2\10anniv\SRB2SrcSVN\src\R_segs.c"
+"C:\srb2demo2\10anniv\SRB2SrcSVN\src\R_sky.c"
+"C:\srb2demo2\10anniv\SRB2SrcSVN\src\r_splats.c"
+"C:\srb2demo2\10anniv\SRB2SrcSVN\src\R_things.c"
+"C:\srb2demo2\10anniv\SRB2SrcSVN\src\Screen.c"
+"C:\srb2demo2\10anniv\SRB2SrcSVN\src\V_video.c"
+"C:\srb2demo2\10anniv\SRB2SrcSVN\src\S_sound.c"
+"C:\srb2demo2\10anniv\SRB2SrcSVN\src\Sounds.c"
+"C:\srb2demo2\10anniv\SRB2SrcSVN\src\lzf.c"
+"C:\srb2demo2\10anniv\SRB2SrcSVN\src\md5.c"
+"C:\srb2demo2\10anniv\SRB2SrcSVN\src\W_wad.c"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPFB.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPFC.tmp" with contents
+[
+dxguid.lib dinput.lib dsound.lib ddraw.lib uuid.lib winmm.lib wsock32.lib fmodvc.lib gdi32.lib advapi32.lib kernel32.lib user32.lib /nologo /subsystem:windows /incremental:no /pdb:"c:\srb2demo2\srb2.pdb" /debug /machine:I386 /out:"c:\srb2demo2\10anniv\srb2win.exe" 
+\srb2demo2\10anniv\SRB2SrcSVN\objs\VC\Release\Win32\dx_error.obj
+\srb2demo2\10anniv\SRB2SrcSVN\objs\VC\Release\Win32\fabdxlib.obj
+\srb2demo2\10anniv\SRB2SrcSVN\objs\VC\Release\Win32\filesrch.obj
+\srb2demo2\10anniv\SRB2SrcSVN\objs\VC\Release\Win32\Mid2strm.obj
+\srb2demo2\10anniv\SRB2SrcSVN\objs\VC\Release\Win32\win_cd.obj
+\srb2demo2\10anniv\SRB2SrcSVN\objs\VC\Release\Win32\win_dbg.obj
+\srb2demo2\10anniv\SRB2SrcSVN\objs\VC\Release\Win32\win_dll.obj
+\srb2demo2\10anniv\SRB2SrcSVN\objs\VC\Release\Win32\win_main.obj
+\srb2demo2\10anniv\SRB2SrcSVN\objs\VC\Release\Win32\win_net.obj
+\srb2demo2\10anniv\SRB2SrcSVN\objs\VC\Release\Win32\win_snd.obj
+\srb2demo2\10anniv\SRB2SrcSVN\objs\VC\Release\Win32\win_sys.obj
+\srb2demo2\10anniv\SRB2SrcSVN\objs\VC\Release\Win32\win_vid.obj
+\srb2demo2\10anniv\SRB2SrcSVN\objs\VC\Release\Win32\comptime.obj
+\srb2demo2\10anniv\SRB2SrcSVN\objs\VC\Release\Win32\D_clisrv.obj
+\srb2demo2\10anniv\SRB2SrcSVN\objs\VC\Release\Win32\D_main.obj
+\srb2demo2\10anniv\SRB2SrcSVN\objs\VC\Release\Win32\D_net.obj
+\srb2demo2\10anniv\SRB2SrcSVN\objs\VC\Release\Win32\D_netcmd.obj
+\srb2demo2\10anniv\SRB2SrcSVN\objs\VC\Release\Win32\D_netfil.obj
+\srb2demo2\10anniv\SRB2SrcSVN\objs\VC\Release\Win32\Dehacked.obj
+\srb2demo2\10anniv\SRB2SrcSVN\objs\VC\Release\Win32\Dstrings.obj
+\srb2demo2\10anniv\SRB2SrcSVN\objs\VC\Release\Win32\Z_zone.obj
+\srb2demo2\10anniv\SRB2SrcSVN\objs\VC\Release\Win32\F_finale.obj
+\srb2demo2\10anniv\SRB2SrcSVN\objs\VC\Release\Win32\F_wipe.obj
+\srb2demo2\10anniv\SRB2SrcSVN\objs\VC\Release\Win32\G_game.obj
+\srb2demo2\10anniv\SRB2SrcSVN\objs\VC\Release\Win32\G_input.obj
+\srb2demo2\10anniv\SRB2SrcSVN\objs\VC\Release\Win32\Am_map.obj
+\srb2demo2\10anniv\SRB2SrcSVN\objs\VC\Release\Win32\Command.obj
+\srb2demo2\10anniv\SRB2SrcSVN\objs\VC\Release\Win32\Console.obj
+\srb2demo2\10anniv\SRB2SrcSVN\objs\VC\Release\Win32\Hu_stuff.obj
+\srb2demo2\10anniv\SRB2SrcSVN\objs\VC\Release\Win32\St_stuff.obj
+\srb2demo2\10anniv\SRB2SrcSVN\objs\VC\Release\Win32\y_inter.obj
+\srb2demo2\10anniv\SRB2SrcSVN\objs\VC\Release\Win32\hw3sound.obj
+\srb2demo2\10anniv\SRB2SrcSVN\objs\VC\Release\Win32\hw_bsp.obj
+\srb2demo2\10anniv\SRB2SrcSVN\objs\VC\Release\Win32\hw_cache.obj
+\srb2demo2\10anniv\SRB2SrcSVN\objs\VC\Release\Win32\hw_draw.obj
+\srb2demo2\10anniv\SRB2SrcSVN\objs\VC\Release\Win32\hw_light.obj
+\srb2demo2\10anniv\SRB2SrcSVN\objs\VC\Release\Win32\hw_main.obj
+\srb2demo2\10anniv\SRB2SrcSVN\objs\VC\Release\Win32\hw_md2.obj
+\srb2demo2\10anniv\SRB2SrcSVN\objs\VC\Release\Win32\hw_trick.obj
+\srb2demo2\10anniv\SRB2SrcSVN\objs\VC\Release\Win32\i_tcp.obj
+\srb2demo2\10anniv\SRB2SrcSVN\objs\VC\Release\Win32\mserv.obj
+\srb2demo2\10anniv\SRB2SrcSVN\objs\VC\Release\Win32\M_argv.obj
+\srb2demo2\10anniv\SRB2SrcSVN\objs\VC\Release\Win32\M_bbox.obj
+\srb2demo2\10anniv\SRB2SrcSVN\objs\VC\Release\Win32\M_cheat.obj
+\srb2demo2\10anniv\SRB2SrcSVN\objs\VC\Release\Win32\M_fixed.obj
+\srb2demo2\10anniv\SRB2SrcSVN\objs\VC\Release\Win32\M_menu.obj
+\srb2demo2\10anniv\SRB2SrcSVN\objs\VC\Release\Win32\M_misc.obj
+\srb2demo2\10anniv\SRB2SrcSVN\objs\VC\Release\Win32\m_queue.obj
+\srb2demo2\10anniv\SRB2SrcSVN\objs\VC\Release\Win32\M_random.obj
+\srb2demo2\10anniv\SRB2SrcSVN\objs\VC\Release\Win32\string.obj
+\srb2demo2\10anniv\SRB2SrcSVN\objs\VC\Release\Win32\Info.obj
+\srb2demo2\10anniv\SRB2SrcSVN\objs\VC\Release\Win32\P_ceilng.obj
+\srb2demo2\10anniv\SRB2SrcSVN\objs\VC\Release\Win32\P_enemy.obj
+\srb2demo2\10anniv\SRB2SrcSVN\objs\VC\Release\Win32\P_fab.obj
+\srb2demo2\10anniv\SRB2SrcSVN\objs\VC\Release\Win32\P_floor.obj
+\srb2demo2\10anniv\SRB2SrcSVN\objs\VC\Release\Win32\P_inter.obj
+\srb2demo2\10anniv\SRB2SrcSVN\objs\VC\Release\Win32\P_lights.obj
+\srb2demo2\10anniv\SRB2SrcSVN\objs\VC\Release\Win32\P_map.obj
+\srb2demo2\10anniv\SRB2SrcSVN\objs\VC\Release\Win32\P_maputl.obj
+\srb2demo2\10anniv\SRB2SrcSVN\objs\VC\Release\Win32\P_mobj.obj
+\srb2demo2\10anniv\SRB2SrcSVN\objs\VC\Release\Win32\p_polyobj.obj
+\srb2demo2\10anniv\SRB2SrcSVN\objs\VC\Release\Win32\P_saveg.obj
+\srb2demo2\10anniv\SRB2SrcSVN\objs\VC\Release\Win32\P_setup.obj
+\srb2demo2\10anniv\SRB2SrcSVN\objs\VC\Release\Win32\P_sight.obj
+\srb2demo2\10anniv\SRB2SrcSVN\objs\VC\Release\Win32\P_spec.obj
+\srb2demo2\10anniv\SRB2SrcSVN\objs\VC\Release\Win32\P_telept.obj
+\srb2demo2\10anniv\SRB2SrcSVN\objs\VC\Release\Win32\P_tick.obj
+\srb2demo2\10anniv\SRB2SrcSVN\objs\VC\Release\Win32\P_user.obj
+\srb2demo2\10anniv\SRB2SrcSVN\objs\VC\Release\Win32\Tables.obj
+\srb2demo2\10anniv\SRB2SrcSVN\objs\VC\Release\Win32\R_bsp.obj
+\srb2demo2\10anniv\SRB2SrcSVN\objs\VC\Release\Win32\R_data.obj
+\srb2demo2\10anniv\SRB2SrcSVN\objs\VC\Release\Win32\R_draw.obj
+\srb2demo2\10anniv\SRB2SrcSVN\objs\VC\Release\Win32\R_main.obj
+\srb2demo2\10anniv\SRB2SrcSVN\objs\VC\Release\Win32\R_plane.obj
+\srb2demo2\10anniv\SRB2SrcSVN\objs\VC\Release\Win32\R_segs.obj
+\srb2demo2\10anniv\SRB2SrcSVN\objs\VC\Release\Win32\R_sky.obj
+\srb2demo2\10anniv\SRB2SrcSVN\objs\VC\Release\Win32\r_splats.obj
+\srb2demo2\10anniv\SRB2SrcSVN\objs\VC\Release\Win32\R_things.obj
+\srb2demo2\10anniv\SRB2SrcSVN\objs\VC\Release\Win32\Screen.obj
+\srb2demo2\10anniv\SRB2SrcSVN\objs\VC\Release\Win32\V_video.obj
+\srb2demo2\10anniv\SRB2SrcSVN\objs\VC\Release\Win32\S_sound.obj
+\srb2demo2\10anniv\SRB2SrcSVN\objs\VC\Release\Win32\Sounds.obj
+\srb2demo2\10anniv\SRB2SrcSVN\objs\VC\Release\Win32\lzf.obj
+\srb2demo2\10anniv\SRB2SrcSVN\objs\VC\Release\Win32\md5.obj
+\srb2demo2\10anniv\SRB2SrcSVN\objs\VC\Release\Win32\W_wad.obj
+\srb2demo2\10anniv\SRB2SrcSVN\objs\VC\Release\Win32\Srb2win.res
+\srb2demo2\10anniv\SRB2SrcSVN\objs\VC\Release\Win32\tmap.obj
+\srb2demo2\10anniv\SRB2SrcSVN\objs\VC\Release\Win32\tmap_mmx.obj
+\srb2demo2\10anniv\SRB2SrcSVN\objs\VC\Release\Win32\tmap_vc.obj
+"\srb2demo2\10anniv\SRB2SrcSVN\tools\libpng-src\projects\visualc6\Win32_LIB_ASM_Release\libpng.lib"
+\srb2demo2\10anniv\SRB2SrcSVN\tools\zlib\projects\visualc6\Win32_LIB_ASM_Release\zlib.lib
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPFC.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+dx_error.c
+fabdxlib.c
+filesrch.c
+Mid2strm.c
+win_cd.c
+win_dbg.c
+win_dll.c
+win_main.c
+win_net.c
+win_snd.c
+win_sys.c
+win_vid.c
+comptime.c
+D_clisrv.c
+D_main.c
+D_net.c
+D_netcmd.c
+D_netfil.c
+Dehacked.c
+Dstrings.c
+Generating Code...
+Compiling...
+Z_zone.c
+F_finale.c
+F_wipe.c
+G_game.c
+G_input.c
+Am_map.c
+Command.c
+Console.c
+Hu_stuff.c
+St_stuff.c
+y_inter.c
+hw3sound.c
+hw_bsp.c
+hw_cache.c
+hw_draw.c
+hw_light.c
+hw_main.c
+hw_md2.c
+hw_trick.c
+i_tcp.c
+Generating Code...
+Compiling...
+mserv.c
+M_argv.c
+M_bbox.c
+M_cheat.c
+M_fixed.c
+M_menu.c
+M_misc.c
+m_queue.c
+M_random.c
+string.c
+Info.c
+P_ceilng.c
+P_enemy.c
+P_fab.c
+P_floor.c
+P_inter.c
+P_lights.c
+P_map.c
+P_maputl.c
+P_mobj.c
+Generating Code...
+Compiling...
+p_polyobj.c
+P_saveg.c
+P_setup.c
+P_sight.c
+P_spec.c
+P_telept.c
+P_tick.c
+P_user.c
+Tables.c
+R_bsp.c
+R_data.c
+R_draw.c
+R_main.c
+R_plane.c
+R_segs.c
+R_sky.c
+r_splats.c
+R_things.c
+Screen.c
+V_video.c
+Generating Code...
+Compiling...
+S_sound.c
+Sounds.c
+lzf.c
+md5.c
+W_wad.c
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+srb2win.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
